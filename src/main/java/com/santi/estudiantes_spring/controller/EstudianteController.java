@@ -4,7 +4,6 @@ import com.santi.estudiantes_spring.model.Estudiante;
 import com.santi.estudiantes_spring.repository.EstudianteRepository;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -12,8 +11,6 @@ import java.util.List;
 public class EstudianteController {
 
     private final EstudianteRepository repo;
-
-    private List<Estudiante> estudiantes = new ArrayList<>();
 
     public EstudianteController(EstudianteRepository repo) {
         this.repo = repo;
